@@ -160,13 +160,11 @@ a#button:hover {
 
 .right-section {
     flex: 3;
+		height: 100%;
 	overflow: scroll;
 }
 
 .img-container {
-	position: absolute;
-	overflow: scroll;
-	height: 100%;
 	padding: 4% 5%;
 }
 
