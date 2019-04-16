@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+.Touche-Bold {
+	font-family: Touche-Bold;
+	font-weight: normal;
+	font-style: normal;
+}
+.Touche-Regular {
+	font-family: Touche-Regular;
+	font-weight: normal;
+	font-style: normal;
+}
+
+html, body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: Touche-Regular;
+    font-size: 8px;
+    height: 100vh;
+    overflow: hidden;
+	background-color: #CCF2E5;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+	height: 15%;
+  font-size: 3rem;
+  box-sizing: border-box;
+}
+
+#nav-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-flow: nowrap;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+}
+
+#logo {
+	font-family: Touche-Bold;
+}
+
+#works-link {
+	margin-right: 4rem;
+}
+
+a#works-link:hover {
+	text-decoration: underline;
+}
+
+a#about-link:hover {
+	text-decoration: underline;
+}
+
+a#works-link:active {
+	text-decoration: underline;
+}
+
+a#about-link:active {
+	text-decoration: underline;
+}
+
+a {
+	color: black;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+#project-container {
+	display: flex;
+	justify-content: center;
+    width: 100%;
+    flex: 1;
+}
+
+.left-section {
+	display: flex;
+	align-items: center;
+    flex: 1;
+	padding-left: 5%;
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+
+.left-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.project-title {
+	font-family: Touche-Bold;
+	font-size: 3rem;
+}
+
+#project-table {
+	height: auto;
+}
+
+#table-content {
+	display: flex;
+}
+
+.line-top {
+	width: 100%;
+	height: 1px;
+	background-color: black;
+}
+
+.project-type {
+	margin: 2rem 2rem 2rem 0;
+}
+
+.project-software {
+	margin: 2rem;
+}
+
+.line-middle {
+	width: 1px;
+	height: auto;
+	background-color: black;
+}
+
+.line-bottom {
+	width: 100%;
+	height: 1px;
+	background-color: black;
+	margin-bottom: 2rem;
+}
+
+#button-container {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 4rem;
+}
+
+.right-button {
+	text-align: right;
+}
+
+a#button:hover {
+	text-decoration: underline;
+}
+
+.right-section {
+    flex: 3;
+	overflow: scroll;
+}
+
+.img-container {
+	position: absolute;
+	overflow: scroll;
+	height: 100%;
+	padding: 4% 5%;
+}
+
+img {
+	width: 100%;
+}

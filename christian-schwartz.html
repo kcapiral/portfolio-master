@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/asset-detail.css" rel="stylesheet" type="text/css">
+    <link href="css/overlay.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Heebo:400,900" rel="stylesheet">
+  </head>
+  <body>
+    <div class="nav">
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&mdash;</a>
+        <div class="overlay-content">
+          <a href="#">Home</a>
+          <a href="asset.html">Assets</a>
+          <a href="proposal.html">Proposal</a>
+          <a href="#">Narrative</a>
+          <a href="#">Branding</a>
+          <a href="#">Portfolio</a>
+        </div>
+      </div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="logo">kathleen capiral</span>
+    </div>
+    <div id="wrapper">
+      <div class="left-section">
+        <div class="content">
+          <div class="project-title">christian schwartz</div>
+          <div class="project-name">2015<br /></p></div>
+          <div class="project-type">
+            <div class="project-subtitle">
+              Type<br />
+            </div>Poster, Billboard, Signage<br />
+          </div>
+          <div class="project-software">
+            <div class="project-subtitle">
+              Software<br />
+            </div>Indesign, Photoshop<br /></div>
+          <div class="project-desc">
+            <p>
+              A poster design based on typography, color and shapes. The theme of the design was based on a typographer, Christian Schwartz from Commercial Type foundry who came to Concordia in 2015 to give a typography talk. The poster was displayed during Schwartz’ talk and later was chosen as one of the posters that stood out. It was originally produced as a poster project, but the design evolved and adapted to a fictional conference event and displayed on a building billboard, and as a hanging flag design.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="right-section">
+        <img src="img/christian-schwartz/mockup.jpg" />
+        <img src="img/christian-schwartz/christian-schwartz-folded-billboard-mockup.png" />
+        <img src="img/christian-schwartz/flag-1.png" />
+        <img src="img/christian-schwartz/flag-2.png" />
+        <img src="img/christian-schwartz/flag-3.png" />
+      </div>
+      <div class="bottom-section">
+        <div class="left-button">
+          <a class="button" href="data-cup.html">previous</a>
+        </div>
+        <!-- <div class="right-button">
+          <a class="button" href="christian-schwartz.html">next</a>
+        </div> -->
+      </div>
+    </div>
+    <script>
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/asset-detail.css" rel="stylesheet" type="text/css">
+    <link href="css/overlay.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Heebo:400,900" rel="stylesheet">
+  </head>
+  <body>
+    <div class="nav">
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&mdash;</a>
+        <div class="overlay-content">
+          <a href="#">Home</a>
+          <a href="asset.html">Assets</a>
+          <a href="proposal.html">Proposal</a>
+          <a href="#">Narrative</a>
+          <a href="#">Branding</a>
+          <a href="#">Portfolio</a>
+        </div>
+      </div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="logo">kathleen capiral</span>
+    </div>
+    <div id="wrapper">
+      <div class="left-section">
+        <div class="content">
+          <div class="project-title">playground</div>
+          <div class="project-name">2018<br /></p></div>
+          <div class="project-type">
+            <div class="project-subtitle">
+              Type<br />
+            </div>Interaction design and Web development<br />
+          </div>
+          <div class="project-software">
+            <div class="project-subtitle">
+              Software<br />
+            </div>XD, Atom, Github<br /></div>
+          <div class="project-desc">
+            <p>
+              A series of webpages exploring different animations and interactions using Javascript and libraries. Playground consists of 5 webpages: Less is, Scroll, Ring Ring Ring, Tug-o-War and Unveil. “Less is” experiments with simple Jquery transitions, color animations and hover overs. “Scroll” uses CSS animations and Rellax for the movement of typography on scroll. “Ring Ring Ring” uses setTimeout and setInterval functions to count down the animations of the text. “Tug-o-War” allows for the user to play a game by using the .keypress function. “Unveil” uses Blast.js to select specific words or sentences and to become animated.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="right-section">
+
+          <iframe width="100%" scrolling="yes" src="https://player.vimeo.com/video/312656283" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+          <iframe width="100%" src="https://player.vimeo.com/video/312656289" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+          <iframe width="100%" src="https://player.vimeo.com/video/312656308" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+          <iframe width="100%" src="https://player.vimeo.com/video/312656319" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+            <iframe width="100%" src="https://player.vimeo.com/video/312656324" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+
+      </div>
+      <div class="bottom-section">
+        <div class="left-button">
+          <a class="button" href="zetacon.html">previous</a>
+        </div>
+        <div class="right-button">
+          <a class="button" href="saiko.html">next</a>
+        </div>
+      </div>
+    </div>
+    <script>
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+    </script>
+  </body>
+</html>

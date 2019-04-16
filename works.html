@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="MyFontsWebfontsKit.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+  </head>
+  <body>
+
+    <main class="flex column" style="height: 100vh;">
+        <div id="nav">
+          <div id="nav-content">
+            <div id="logo">
+              <a href="index.html">kathleen capiral</a>
+            </div>
+            <div id="nav-right">
+              <a href="works.html" id="works-link">works</a>
+              <a href="about.html" id="about-link">about</a>
+            </div>
+          </div>
+        </div>
+
+        <section class="flex" style="flex-grow: 1; overflow: hidden; margin-bottom: 15vh;">
+          <div class="flex column justify-content-center" style="flex-grow: 1; font-size: 50px;">
+            <div id="project-link-container" class="flex column" style="flex-wrap: nowrap; position: absolute;">
+              <a href ="matagora.html" id="matagora-link">
+                <div id="matagora" data-image="./img/works/works-list.png" class="project-link">matagora</div>
+              </a>
+              <a href="playground.html" id="playground-link">
+                <div id="playground" data-image="./img/works/works-list3.png" class="project-link">playground</div>
+              </a>
+              <a href="zetacon.html" id="zetacon-link">
+                <div id="zetacon" data-image="./img/works/works-list2.png" class="project-link">zetacon</div>
+              </a>
+              <a href="saiko.html" id="saiko-link">
+                <div id="saiko" data-image="./img/works/works-list4.png" class="project-link">saiko!</div>
+              </a>
+              <a href="data-cup.html" id="datacup-link">
+                <div id="datacup" data-image="./img/works/works-list5.png" class="project-link">data cup</div>
+              </a>
+              <a href="christian-schwartz.html" id="christianschwartz-link">
+                <div id="christianschwartz" data-image="./img/works/works-list6.png" class="project-link" style="white-space: nowrap">christian schwartz</div>
+              </a>
+            </div>
+          </div>
+          <div id="dynamic-image" style="width: 75%; background-image: url('./img/works/works-list.png'); background-size: cover; background-position: center center;">
+          </div>
+        </section>
+      </main>
+
+      <script>
+      const changeDynamicImage = (event) => {
+        const eventId = event.target.id;
+        let imageSrc = event.target.dataset.image;
+        document.getElementById("dynamic-image").style.backgroundImage = `url("${imageSrc}")`;
+      }
+
+      const projectLinks = document.getElementById("project-link-container");
+      projectLinks.addEventListener('mouseover', changeDynamicImage);
+      </script>
+
+  </body>
+</html>
