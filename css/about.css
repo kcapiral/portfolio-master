@@ -204,7 +204,8 @@ a#email:hover {
 	}
 
 	#about-section {
-    width: 100%;
+    width: 100%;	
+    margin-bottom: 8rem;
 	}
 
 	.about-content {
