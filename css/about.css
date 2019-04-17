@@ -123,6 +123,11 @@ a:visited {
 	font-size: 3rem;
 }
 
+.about-content {
+	display: flex;
+	flex-direction: column;
+}
+
 .about-text {
 	line-height: 4rem;
 }
@@ -174,6 +179,7 @@ a#email:hover {
 	#nav {
 	  font-size: 3rem;
 		display: block;
+		padding-left: 4rem;
 	}
 
 	#logo-desktop {
@@ -204,6 +210,11 @@ a#email:hover {
 	.about-content {
 		width: 100%;
 		margin: 0 4rem;
+		flex-direction: column-reverse;
+	}
+
+	#contact-container {
+		margin: 0 0 8rem 0;
 	}
 }
 
