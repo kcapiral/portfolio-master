@@ -120,6 +120,11 @@ a:visited {
 #project-section {
 	width: auto;
 	height: 100%;
+	-webkit-transition: margin-left 0.1s linear;
+    -khtml-transition: margin-left 0.1s linear;
+    -moz-transition: margin-left 0.1s linear;
+    -ms-transition: margin-left 0.1s linear;
+    transition: margin-left 0.1s linear;
 }
 
 .project-image {

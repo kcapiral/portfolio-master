@@ -10,7 +10,7 @@ const scrollHandler = () => {
   let marginLeft = parseInt(projectWindow.css("margin-left").replace(/[^-\d\.]/g, ''));
   // margin left cannot go above 0
   // margin left cannot go below windowWidth - projectWindowWidth
-  let newMargin = marginLeft + velocity/50;
+  let newMargin = marginLeft + velocity/10;
   if (newMargin > 0) newMargin = 0;
   if (newMargin < windowWidth - projectWindowWidth) newMargin = windowWidth - projectWindowWidth;
   projectWindow.css("margin-left", `${newMargin}px`);
@@ -43,8 +43,8 @@ $(document).ready(function() {
     imagesRange.push(element.x);
   });
 
-  interval = setInterval(scrollHandler, 20);
-  
+  interval = setInterval(scrollHandler, 100);
+
   $("#index-section").mousedown((e) => {
     windowWidth = e.currentTarget.clientWidth;
     const mouseLocation = e.pageX;
@@ -55,7 +55,7 @@ $(document).ready(function() {
     velocity = 0;
   });
 
-  
+
 
   $("#matagora").hover(function(){
     $("body").css("background-color", "#DEFFF4");
