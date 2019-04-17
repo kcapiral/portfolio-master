@@ -53,8 +53,12 @@ section {
   /* background-color: orange; */
 }
 
-#logo {
+#logo-desktop {
 	font-family: Touche-Bold;
+}
+
+#logo-mobile {
+	display: none;
 }
 
 #works-link {
