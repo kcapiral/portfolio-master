@@ -145,8 +145,77 @@ a:visited {
 	font-size: 4rem;
 }
 
+.title {
+	display: none;
+}
+
 .flex { display: flex }
 .flex.row { flex-direction: row }
 .flex.column { flex-direction: column }
 .justify-content-center { justify-content: center }
 .align-content-center { align-items: center }
+
+@media only screen and (max-width: 600px) {
+  body {
+		overflow: scroll;
+  }
+
+	main {
+		display: block;
+	}
+
+	#nav {
+	  font-size: 3rem;
+	}
+
+	#logo-desktop {
+		display: none;
+	}
+
+	#logo-mobile {
+		display: block;
+		font-family: Touche-Bold;
+	}
+
+	#works-link {
+    margin-right: 2rem;
+	}
+
+	#project-container {
+		display: block;
+	}
+
+	.project-title {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+	}
+
+	.left-section {
+		padding: 0 5%;
+	}
+
+	#index-section {
+		height: 30%;
+		overflow-x: visible;
+	}
+
+	#project-section {
+		display: block;
+	}
+
+	#monogram-container-left {
+		display: none;
+	}
+
+	a.img-link {
+		margin-left: 0vw;
+		display: contents;
+	}
+	.title {
+		display: block;
+		text-align: center;
+    font-size: 2rem;
+    padding: 4rem;
+		font-family: Touche-Bold;
+	}
+}
