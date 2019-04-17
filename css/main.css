@@ -168,6 +168,11 @@ a:visited {
 	  font-size: 3rem;
 	}
 
+	#nav-content {
+		width: 100%;
+		padding: 0 4rem;
+	}
+
 	#logo-desktop {
 		display: none;
 	}
