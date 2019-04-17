@@ -6,54 +6,54 @@ let interval;
 let projectTitle;
 let imagesRange = [];
 
-const scrollHandler = () => {
-  let marginLeft = parseInt(projectWindow.css("margin-left").replace(/[^-\d\.]/g, ''));
-  // margin left cannot go above 0
-  // margin left cannot go below windowWidth - projectWindowWidth
-  let newMargin = marginLeft + velocity/10;
-  if (newMargin > 0) newMargin = 0;
-  if (newMargin < windowWidth - projectWindowWidth) newMargin = windowWidth - projectWindowWidth;
-  projectWindow.css("margin-left", `${newMargin}px`);
+// const scrollHandler = () => {
+//   let marginLeft = parseInt(projectWindow.css("margin-left").replace(/[^-\d\.]/g, ''));
+//   // margin left cannot go above 0
+//   // margin left cannot go below windowWidth - projectWindowWidth
+//   let newMargin = marginLeft + velocity/10;
+//   if (newMargin > 0) newMargin = 0;
+//   if (newMargin < windowWidth - projectWindowWidth) newMargin = windowWidth - projectWindowWidth;
+//   projectWindow.css("margin-left", `${newMargin}px`);
 
-  // change text depdning on margins
-  let pointer = -newMargin + (windowWidth/2);
-  // depending on position of image, change title.
-  if (pointer > imagesRange[5]) {
-    projectTitle.text("christian shwartz");
-  } else if (pointer > imagesRange[4]) {
-    projectTitle.text("data cup");
-  } else if (pointer > imagesRange[3]) {
-    projectTitle.text("saiko!");
-  } else if (pointer > imagesRange[2]) {
-    projectTitle.text("playground");
-  } else if (pointer > imagesRange[1]) {
-    projectTitle.text("zetacon");
-  } else {
-    projectTitle.text("matagora");
-  }
-}
+//   // change text depdning on margins
+//   let pointer = -newMargin + (windowWidth/2);
+//   // depending on position of image, change title.
+//   if (pointer > imagesRange[5]) {
+//     projectTitle.text("christian shwartz");
+//   } else if (pointer > imagesRange[4]) {
+//     projectTitle.text("data cup");
+//   } else if (pointer > imagesRange[3]) {
+//     projectTitle.text("saiko!");
+//   } else if (pointer > imagesRange[2]) {
+//     projectTitle.text("playground");
+//   } else if (pointer > imagesRange[1]) {
+//     projectTitle.text("zetacon");
+//   } else {
+//     projectTitle.text("matagora");
+//   }
+// }
 
 $(document).ready(function() {
   // check mouse position and scroll the project window
-  projectWindow = $("#project-section");
-  projectWindowWidth = projectWindow[0].clientWidth;
-  projectTitle = $("#project-title");
-  projectImages = $("img").toArray();
-  projectImages.forEach(element => {
-    imagesRange.push(element.x);
-  });
+//   projectWindow = $("#project-section");
+//   projectWindowWidth = projectWindow[0].clientWidth;
+//   projectTitle = $("#project-title");
+//   projectImages = $("img").toArray();
+//   projectImages.forEach(element => {
+//     imagesRange.push(element.x);
+//   });
 
-  interval = setInterval(scrollHandler, 100);
+//   interval = setInterval(scrollHandler, 100);
 
-  $("#index-section").mousedown((e) => {
-    windowWidth = e.currentTarget.clientWidth;
-    const mouseLocation = e.pageX;
-    velocity = (windowWidth / 2) - mouseLocation;
-  });
+//   $("#index-section").mousedown((e) => {
+//     windowWidth = e.currentTarget.clientWidth;
+//     const mouseLocation = e.pageX;
+//     velocity = (windowWidth / 2) - mouseLocation;
+//   });
 
-  $("#index-section").mouseup((e) => {
-    velocity = 0;
-  });
+//   $("#index-section").mouseup((e) => {
+//     velocity = 0;
+//   });
 
 
 
