@@ -96,7 +96,8 @@ a:visited {
 	display: flex;
 	align-items: center;
 	width: 100%;
-	height: 70%;
+    height: 70%;
+    overflow: hidden;
 }
 
 #monogram-container-left {
@@ -110,9 +111,10 @@ a:visited {
 }
 
 #project-window {
-	overflow: scroll;
-	width: 100%;
-	height: 100%;
+	/* overflow: scroll;
+	width: 100%; */
+    height: 100%;
+    cursor: pointer;
 }
 
 #project-section {
