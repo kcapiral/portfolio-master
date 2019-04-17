@@ -3,72 +3,89 @@
   <head>
     <meta charset="UTF-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/asset-detail.css" rel="stylesheet" type="text/css">
-    <link href="css/overlay.css" rel="stylesheet" type="text/css">
+    <link href="css/project-detail.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="MyFontsWebfontsKit.css">
     <link href="https://fonts.googleapis.com/css?family=Heebo:400,900" rel="stylesheet">
   </head>
-  <body>
-    <div class="nav">
-      <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&mdash;</a>
-        <div class="overlay-content">
-          <a href="#">Home</a>
-          <a href="asset.html">Assets</a>
-          <a href="proposal.html">Proposal</a>
-          <a href="#">Narrative</a>
-          <a href="#">Branding</a>
-          <a href="#">Portfolio</a>
-        </div>
-      </div>
-      <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="logo">kathleen capiral</span>
-    </div>
-    <div id="wrapper">
-      <div class="left-section">
-        <div class="content">
-          <div class="project-title">playground</div>
-          <div class="project-name">2018<br /></p></div>
-          <div class="project-type">
-            <div class="project-subtitle">
-              Type<br />
-            </div>Interaction design and Web development<br />
+  <body style="background-color: #FDECE6;">
+
+    <main>
+      <div id="nav">
+        <div id="nav-content">
+          <div id="logo-desktop">
+            <a href="index.html">kathleen capiral</a>
+            <a href="index.html" id="mobile-logo" style="display: none;">k.</a>
           </div>
-          <div class="project-software">
-            <div class="project-subtitle">
-              Software<br />
-            </div>XD, Atom, Github<br /></div>
-          <div class="project-desc">
-            <p>
-              A series of webpages exploring different animations and interactions using Javascript and libraries. Playground consists of 5 webpages: Less is, Scroll, Ring Ring Ring, Tug-o-War and Unveil. “Less is” experiments with simple Jquery transitions, color animations and hover overs. “Scroll” uses CSS animations and Rellax for the movement of typography on scroll. “Ring Ring Ring” uses setTimeout and setInterval functions to count down the animations of the text. “Tug-o-War” allows for the user to play a game by using the .keypress function. “Unveil” uses Blast.js to select specific words or sentences and to become animated.
-            </p>
+          <div id="logo-mobile">
+            <a href="index.html">k.</a>
+          </div>
+          <div id="nav-right">
+            <a href="works.html" id="works-link">works</a>
+            <a href="about.html" id="about-link">about</a>
           </div>
         </div>
       </div>
-      <div class="right-section">
 
-          <iframe width="100%" scrolling="yes" src="https://player.vimeo.com/video/312656283" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
-          <iframe width="100%" src="https://player.vimeo.com/video/312656289" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
-          <iframe width="100%" src="https://player.vimeo.com/video/312656308" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
-          <iframe width="100%" src="https://player.vimeo.com/video/312656319" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
-            <iframe width="100%" src="https://player.vimeo.com/video/312656324" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+      <div id="project-container">
+        <div class="left-section">
+          <div class="left-content">
+            <div class="project-title">playground</div>
+            <div class="project-name">2018<br /></p></div>
+
+            <div id="project-table">
+              <div class="line-top"></div>
+              <div id="table-content">
+                <div class="project-type">
+                  <div class="project-subtitle">
+                    Type<br />
+                  </div>Front end<br />
+                </div>
+                <div class="line-middle"></div>
+                <div class="project-software">
+                  <div class="project-subtitle">
+                    Software<br />
+                  </div>XD, Atom, Github<br />
+                </div>
+              </div>
+              <div class="line-bottom"></div>
+            </div>
+
+              <div class="project-description">
+                <p>
+                  A series of webpages exploring different animations and interactions using Javascript and libraries. Playground consists of 5 webpages: Less is, Scroll, Ring Ring Ring, Tug-o-War and Unveil. “Less is” experiments with simple Jquery transitions, color animations and hover overs. “Scroll” uses CSS animations and Rellax for the movement of typography on scroll. “Ring Ring Ring” uses setTimeout and setInterval functions to count down the animations of the text. “Tug-o-War” allows for the user to play a game by using the .keypress function. “Unveil” uses Blast.js to select specific words or sentences and to become animated.
+                </p>
+              </div>
+
+              <div id="button-container">
+                <div class="left-button">
+                  <a id="button" href="matagora.html">&larr; matagora</a>
+                </div>
+                <div class="right-button">
+                  <a id="button" href="zetacon.html">zetacon &rarr;</a>
+                </div>
+              </div>
+
+          </div>
+        </div>
+
+        <div class="right-section">
+            <div class="img-container">
+              <div class="video-container" style="margin-bottom: 8rem;">
+                <iframe src="https://player.vimeo.com/video/312656283?autoplay=1&loop=1" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="video"></iframe>
+              </div>
+              <div class="video-container" style="margin-bottom: 8rem;">
+                <iframe src="https://player.vimeo.com/video/312656289?autoplay=1&loop=1" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="video"></iframe>
+              </div>
+              <div class="video-container" style="margin-bottom: 8rem;">
+                <iframe src="https://player.vimeo.com/video/312656324?autoplay=1&loop=1" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="video"></iframe>
+              </div>
+              <div class="video-container" style="margin-bottom: 4rem;">
+                <iframe src="https://player.vimeo.com/video/312656319?autoplay=1&loop=1" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="video"></iframe>
+              </div>
+            </div>
+        </div>
 
       </div>
-      <div class="bottom-section">
-        <div class="left-button">
-          <a class="button" href="zetacon.html">previous</a>
-        </div>
-        <div class="right-button">
-          <a class="button" href="saiko.html">next</a>
-        </div>
-      </div>
-    </div>
-    <script>
-    function openNav() {
-      document.getElementById("myNav").style.height = "100%";
-    }
-
-    function closeNav() {
-      document.getElementById("myNav").style.height = "0%";
-    }
-    </script>
+    </main>
   </body>
 </html>

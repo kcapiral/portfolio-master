@@ -162,6 +162,51 @@ a#email:hover {
 	text-decoration: underline;
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+		overflow: scroll;
+  }
+
+	main {
+		display: block;
+	}
+
+	#nav {
+	  font-size: 3rem;
+		display: block;
+	}
+
+	#logo-desktop {
+		display: none;
+	}
+
+	#logo-mobile {
+		display: block;
+		font-family: Touche-Bold;
+	}
+
+	#works-link {
+    margin-right: 2rem;
+	}
+
+	#about-container {
+    display: block;
+	}
+
+	#monogram-section {
+		display: none;
+	}
+
+	#about-section {
+    width: 100%;
+	}
+
+	.about-content {
+		width: 100%;
+		margin: 0 4rem;
+	}
+}
+
 .flex { display: flex }
 .flex.row { flex-direction: row }
 .flex.column { flex-direction: column }
