@@ -142,7 +142,9 @@ a:visited {
     position: absolute;
     width: 100%;
     text-align: center;
-    bottom: 4rem;
+		bottom: 2rem;
+		font-size: 2rem;
+		font-family: Touche-Bold;
 }
 
 .img-link {
@@ -212,8 +214,9 @@ a:visited {
 	}
 
 	#index-section {
-		height: 30%;
-		overflow-x: visible;
+		overflow: visible;
+		height: 31%;
+		width: 100vw;
 	}
 
 	#project-section {
@@ -235,4 +238,23 @@ a:visited {
     padding: 4rem;
 		font-family: 'Touche-Bold';
 	}
+
+	.image-title {
+	    position: initial;
+	    margin: 2rem 0;
+	}
+
+	.project-image {
+    height: 100%;
+    padding: 0;
+    background-color: white;
+}
+
+	#project-window {
+	    height: 100%;
+	    width: 100%;
+			display: flex;
+			justify-content: center;
+	}
+
 }
