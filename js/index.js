@@ -58,26 +58,51 @@ $(document).ready(function() {
 
 
   $("#matagora").hover(function(){
-    $("body").css("background-color", "#DEFFF4");
+    $("body").css("background-color", "#DEFFF4"), 1200;
   });
 
   $("#playground").hover(function(){
-    $("body").css("background-color", "#FFEEE8");
+    $("body").css("background-color", "#FFEEE8"), 1200;
   });
 
   $("#zetacon").hover(function(){
-    $("body").css("background-color", "#8AA2A8");
+    $("body").css("background-color", "#8AA2A8"), 1200;
   });
 
   $("#saiko").hover(function(){
-    $("body").css("background-color", "#D5D5FF");
+    $("body").css("background-color", "#D5D5FF"), 1200;
   });
 
   $("#datacup").hover(function(){
-    $("body").css("background-color", "#EBD59B");
+    $("body").css("background-color", "#EBD59B"), 1200;
   });
 
   $("#christianschwartz").hover(function(){
-    $("body").css("background-color", "#C4EFFF");
+    $("body").css("background-color", "#C4EFFF"), 1200;
   });
+
+  // $("#matagora").hover(function(){
+  //   $("body").animate({backgroundColor: "#DEFFF4"}, 600 );
+  // });
+  //
+  // $("#playground").hover(function(){
+  //   $("body").animate({backgroundColor: "#abcdef"}, 600 );
+  // });
+  //
+  // $("#zetacon").hover(function(){
+  //   $("body").animate({backgroundColor: "#abcdef"}, 600 );
+  // });
+  //
+  // $("#saiko").hover(function(){
+  //   $("body").animate({backgroundColor: "#abcdef"}, 600 );
+  // });
+  //
+  // $("#datacup").hover(function(){
+  //   $("body").animate({backgroundColor: "#abcdef"}, 600 );
+  // });
+  //
+  // $("#christianschwartz").hover(function(){
+  //   $("body").animate({backgroundColor: "#abcdef"}, 600 );
+  // });
+
 });
